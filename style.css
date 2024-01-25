@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  background: #0a0a10;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0px;
+  max-width: 414px;
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+}
+
+.blur {
+  width: 414px;
+  height: 350px;
+  position: absolute;
+  z-index: -1;
+  background: #ffffff;
+  opacity: 0.25;
+  filter: blur(80px);
+  border-radius: 80%;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+}
+
+.h1 {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-inputs label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 6px;
+}
+
+.container-inputs input {
+  margin-top: 3px;
+  padding: 8px;
+  width: 100%;
+  height: 43px;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.container-inputs input::placeholder {
+  color: #ffffff;
+}
+
+.btn-login {
+  width: 100%;
+  height: 68px;
+  background: #637cb4;
+  border: none;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 2px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.9s ease;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.btn-login:hover {
+  /*background: #393939;*/
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-login:active {
+  opacity: 0.5;
+}
+
+.btn-login i {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 2px;
+  color: #ffffff;
+}
+
+.btn-sigin {
+  width: 100%;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.14);
+  border: none;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 2px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.9s ease;
+  border-radius: 5px;
+}
+
+.btn-sigin:hover {
+  /*background: #393939;*/
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-sigin:active {
+  opacity: 0.5;
+}
+
+.icon-google {
+  width: 20px;
+  height: 20px;
+}
+
+.container-links {
+  margin-top: 20px;
+  position: relative;
+}
+
+.container-links a {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 16px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container-links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background: #637cb4;
+    bottom: -3px;
+    left: 0;
+    transition: 0.9s ease;
+}
+
+.container-links a:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #637cb4;
+    bottom: -3px;
+    left: 0;
+}
+
+.container-links span {
+  font-weight: 900;
+  color: #ffffff;
+}
